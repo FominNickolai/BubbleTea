@@ -17,7 +17,9 @@ class ViewController: UIViewController {
     var coreDataStack: CoreDataStack!
     
     var fetchRequest: NSFetchRequest<Venue>!
-    var venues: [Venue]!
+    var venues: [Venue] = []
+    
+    var asyncFetchRequest: NSAsynchronousFetchRequest<Venue>!
     
     //MARK: - IBOutlets
     @IBOutlet weak var tableView: UITableView!
@@ -25,10 +27,20 @@ class ViewController: UIViewController {
     //MARK: - View Life Cycle
     override func viewDidLoad() {
         super.viewDidLoad()
-//        guard let model = coreDataStack.managedContext.persistentStoreCoordinator?.managedObjectModel, let fetchRequest = model.fetchRequestTemplate(forName: "FetchAllVenue") as? NSFetchRequest<Venue> else { return }
-//        self.fetchRequest = fetchRequest
+        
         fetchRequest = Venue.fetchRequest()
-        fetchAndReload()
+        
+        asyncFetchRequest = NSAsynchronousFetchRequest<Venue>(fetchRequest: fetchRequest, completionBlock: { [unowned self] (result) in
+            guard let venues = result.finalResult else { return }
+            self.venues = venues
+            self.tableView.reloadData()
+        })
+        
+        do {
+            try coreDataStack.managedContext.execute(asyncFetchRequest)
+        } catch let error as NSError {
+            print("Could not fetch \(error), \(error.userInfo)")
+        }
     }
     
     //MARK: - Navigation

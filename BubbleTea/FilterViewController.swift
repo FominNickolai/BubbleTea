@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import CoreData
 
 class FilterViewController: UITableViewController {
     
@@ -32,10 +33,17 @@ class FilterViewController: UITableViewController {
     @IBOutlet weak var distanceSortCell: UITableViewCell!
     @IBOutlet weak var priceSortCell: UITableViewCell!
     
+    //MARK: - Properties
+    var coreDataStack: CoreDataStack!
+    
+    lazy var cheapVenuePredicate: NSPredicate = {
+        return NSPredicate(format: "%K == %@", #keyPath(Venue.priceInfo.priceCategory), "$")
+    }()
+    
     //MARK: - View Life Cycle
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        populateCheapVenueCountLabel()
     }
 
 }
@@ -54,5 +62,30 @@ extension FilterViewController {
         
     }
 }
+
+//MARK: - Helpers methods
+extension FilterViewController {
+    
+    func populateCheapVenueCountLabel() {
+        
+        let fetchRequest = NSFetchRequest<NSNumber>(entityName: "Venue")
+        fetchRequest.resultType = .countResultType
+        fetchRequest.predicate = cheapVenuePredicate
+        
+        do {
+            let countResult = try coreDataStack.managedContext.fetch(fetchRequest)
+            let count = countResult.first!.intValue
+            firstPriceCategoryLabel.text = "\(count) bubble tea places"
+        } catch let error as NSError {
+            print("Could not fech \(error), \(error.userInfo)")
+        }
+        
+    }
+    
+}
+
+
+
+
 
 

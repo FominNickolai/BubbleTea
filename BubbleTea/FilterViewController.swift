@@ -40,10 +40,20 @@ class FilterViewController: UITableViewController {
         return NSPredicate(format: "%K == %@", #keyPath(Venue.priceInfo.priceCategory), "$")
     }()
     
+    lazy var moderateVenuePredicate: NSPredicate = {
+        return NSPredicate(format: "%K == %@", #keyPath(Venue.priceInfo.priceCategory), "$$")
+    }()
+    
+    lazy var expensiveVenuePredicate: NSPredicate = {
+        return NSPredicate(format: "%K == %@", #keyPath(Venue.priceInfo.priceCategory), "$$$")
+    }()
+    
     //MARK: - View Life Cycle
     override func viewDidLoad() {
         super.viewDidLoad()
-        populateCheapVenueCountLabel()
+        populateVenueCount(with: cheapVenuePredicate, and: firstPriceCategoryLabel)
+        populateVenueCount(with: moderateVenuePredicate, and: secondPriceCategoryLabel)
+        populateVenueCount(with: expensiveVenuePredicate, and: thirdPriceCategoryLabel)
     }
 
 }
@@ -66,16 +76,16 @@ extension FilterViewController {
 //MARK: - Helpers methods
 extension FilterViewController {
     
-    func populateCheapVenueCountLabel() {
+    func populateVenueCount(with predicate: NSPredicate, and displayInLabel: UILabel) {
         
         let fetchRequest = NSFetchRequest<NSNumber>(entityName: "Venue")
         fetchRequest.resultType = .countResultType
-        fetchRequest.predicate = cheapVenuePredicate
+        fetchRequest.predicate = predicate
         
         do {
             let countResult = try coreDataStack.managedContext.fetch(fetchRequest)
             let count = countResult.first!.intValue
-            firstPriceCategoryLabel.text = "\(count) bubble tea places"
+            displayInLabel.text = "\(count) bubble tea places"
         } catch let error as NSError {
             print("Could not fech \(error), \(error.userInfo)")
         }

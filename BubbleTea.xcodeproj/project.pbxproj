@@ -12,6 +12,19 @@
 		B738BD2A1F3AE0AF00C44497 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B738BD281F3AE0AF00C44497 /* Main.storyboard */; };
 		B738BD2C1F3AE0AF00C44497 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B738BD2B1F3AE0AF00C44497 /* Assets.xcassets */; };
 		B738BD2F1F3AE0AF00C44497 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B738BD2D1F3AE0AF00C44497 /* LaunchScreen.storyboard */; };
+		B738BD371F3AE0E800C44497 /* CoreDataStack.swift in Sources */ = {isa = PBXBuildFile; fileRef = B738BD361F3AE0E800C44497 /* CoreDataStack.swift */; };
+		B738BD3A1F3AE1C900C44497 /* BubbleTea.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = B738BD381F3AE1C900C44497 /* BubbleTea.xcdatamodeld */; };
+		B738BD461F3AE37700C44497 /* Location+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = B738BD3C1F3AE37700C44497 /* Location+CoreDataClass.swift */; };
+		B738BD471F3AE37700C44497 /* Location+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = B738BD3D1F3AE37700C44497 /* Location+CoreDataProperties.swift */; };
+		B738BD481F3AE37700C44497 /* Category+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = B738BD3E1F3AE37700C44497 /* Category+CoreDataClass.swift */; };
+		B738BD491F3AE37700C44497 /* Category+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = B738BD3F1F3AE37700C44497 /* Category+CoreDataProperties.swift */; };
+		B738BD4A1F3AE37700C44497 /* PriceInfo+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = B738BD401F3AE37700C44497 /* PriceInfo+CoreDataClass.swift */; };
+		B738BD4B1F3AE37700C44497 /* PriceInfo+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = B738BD411F3AE37700C44497 /* PriceInfo+CoreDataProperties.swift */; };
+		B738BD4C1F3AE37700C44497 /* Stats+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = B738BD421F3AE37700C44497 /* Stats+CoreDataClass.swift */; };
+		B738BD4D1F3AE37700C44497 /* Stats+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = B738BD431F3AE37700C44497 /* Stats+CoreDataProperties.swift */; };
+		B738BD4E1F3AE37700C44497 /* Venue+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = B738BD441F3AE37700C44497 /* Venue+CoreDataClass.swift */; };
+		B738BD4F1F3AE37700C44497 /* Venue+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = B738BD451F3AE37700C44497 /* Venue+CoreDataProperties.swift */; };
+		B7A9A4371F3AE491009FDF60 /* seed.json in Resources */ = {isa = PBXBuildFile; fileRef = B7A9A4361F3AE491009FDF60 /* seed.json */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +35,19 @@
 		B738BD2B1F3AE0AF00C44497 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		B738BD2E1F3AE0AF00C44497 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		B738BD301F3AE0AF00C44497 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B738BD361F3AE0E800C44497 /* CoreDataStack.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreDataStack.swift; sourceTree = "<group>"; };
+		B738BD391F3AE1C900C44497 /* BubbleTea.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = BubbleTea.xcdatamodel; sourceTree = "<group>"; };
+		B738BD3C1F3AE37700C44497 /* Location+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Location+CoreDataClass.swift"; sourceTree = "<group>"; };
+		B738BD3D1F3AE37700C44497 /* Location+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Location+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		B738BD3E1F3AE37700C44497 /* Category+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Category+CoreDataClass.swift"; sourceTree = "<group>"; };
+		B738BD3F1F3AE37700C44497 /* Category+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Category+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		B738BD401F3AE37700C44497 /* PriceInfo+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "PriceInfo+CoreDataClass.swift"; sourceTree = "<group>"; };
+		B738BD411F3AE37700C44497 /* PriceInfo+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "PriceInfo+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		B738BD421F3AE37700C44497 /* Stats+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Stats+CoreDataClass.swift"; sourceTree = "<group>"; };
+		B738BD431F3AE37700C44497 /* Stats+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Stats+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		B738BD441F3AE37700C44497 /* Venue+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Venue+CoreDataClass.swift"; sourceTree = "<group>"; };
+		B738BD451F3AE37700C44497 /* Venue+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Venue+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		B7A9A4361F3AE491009FDF60 /* seed.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = seed.json; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,14 +80,35 @@
 		B738BD231F3AE0AF00C44497 /* BubbleTea */ = {
 			isa = PBXGroup;
 			children = (
+				B7A9A4361F3AE491009FDF60 /* seed.json */,
+				B738BD3B1F3AE36700C44497 /* NSManagedContext */,
 				B738BD241F3AE0AF00C44497 /* AppDelegate.swift */,
 				B738BD261F3AE0AF00C44497 /* ViewController.swift */,
 				B738BD281F3AE0AF00C44497 /* Main.storyboard */,
 				B738BD2B1F3AE0AF00C44497 /* Assets.xcassets */,
 				B738BD2D1F3AE0AF00C44497 /* LaunchScreen.storyboard */,
 				B738BD301F3AE0AF00C44497 /* Info.plist */,
+				B738BD361F3AE0E800C44497 /* CoreDataStack.swift */,
+				B738BD381F3AE1C900C44497 /* BubbleTea.xcdatamodeld */,
 			);
 			path = BubbleTea;
+			sourceTree = "<group>";
+		};
+		B738BD3B1F3AE36700C44497 /* NSManagedContext */ = {
+			isa = PBXGroup;
+			children = (
+				B738BD3C1F3AE37700C44497 /* Location+CoreDataClass.swift */,
+				B738BD3D1F3AE37700C44497 /* Location+CoreDataProperties.swift */,
+				B738BD3E1F3AE37700C44497 /* Category+CoreDataClass.swift */,
+				B738BD3F1F3AE37700C44497 /* Category+CoreDataProperties.swift */,
+				B738BD401F3AE37700C44497 /* PriceInfo+CoreDataClass.swift */,
+				B738BD411F3AE37700C44497 /* PriceInfo+CoreDataProperties.swift */,
+				B738BD421F3AE37700C44497 /* Stats+CoreDataClass.swift */,
+				B738BD431F3AE37700C44497 /* Stats+CoreDataProperties.swift */,
+				B738BD441F3AE37700C44497 /* Venue+CoreDataClass.swift */,
+				B738BD451F3AE37700C44497 /* Venue+CoreDataProperties.swift */,
+			);
+			path = NSManagedContext;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -124,6 +171,7 @@
 			files = (
 				B738BD2F1F3AE0AF00C44497 /* LaunchScreen.storyboard in Resources */,
 				B738BD2C1F3AE0AF00C44497 /* Assets.xcassets in Resources */,
+				B7A9A4371F3AE491009FDF60 /* seed.json in Resources */,
 				B738BD2A1F3AE0AF00C44497 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -135,8 +183,20 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B738BD3A1F3AE1C900C44497 /* BubbleTea.xcdatamodeld in Sources */,
+				B738BD4F1F3AE37700C44497 /* Venue+CoreDataProperties.swift in Sources */,
+				B738BD371F3AE0E800C44497 /* CoreDataStack.swift in Sources */,
+				B738BD4A1F3AE37700C44497 /* PriceInfo+CoreDataClass.swift in Sources */,
+				B738BD4D1F3AE37700C44497 /* Stats+CoreDataProperties.swift in Sources */,
+				B738BD4C1F3AE37700C44497 /* Stats+CoreDataClass.swift in Sources */,
+				B738BD481F3AE37700C44497 /* Category+CoreDataClass.swift in Sources */,
+				B738BD471F3AE37700C44497 /* Location+CoreDataProperties.swift in Sources */,
+				B738BD4E1F3AE37700C44497 /* Venue+CoreDataClass.swift in Sources */,
 				B738BD271F3AE0AF00C44497 /* ViewController.swift in Sources */,
+				B738BD461F3AE37700C44497 /* Location+CoreDataClass.swift in Sources */,
+				B738BD4B1F3AE37700C44497 /* PriceInfo+CoreDataProperties.swift in Sources */,
 				B738BD251F3AE0AF00C44497 /* AppDelegate.swift in Sources */,
+				B738BD491F3AE37700C44497 /* Category+CoreDataProperties.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -319,6 +379,19 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		B738BD381F3AE1C900C44497 /* BubbleTea.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				B738BD391F3AE1C900C44497 /* BubbleTea.xcdatamodel */,
+			);
+			currentVersion = B738BD391F3AE1C900C44497 /* BubbleTea.xcdatamodel */;
+			path = BubbleTea.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
 	};
 	rootObject = B738BD191F3AE0AE00C44497 /* Project object */;
 }

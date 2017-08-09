@@ -73,7 +73,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         let venueEntity = NSEntityDescription.entity(forEntityName: "Venue", in: coreDataStack.managedContext)!
         let locationEntity = NSEntityDescription.entity(forEntityName: "Location", in: coreDataStack.managedContext)!
         let categoryEntity = NSEntityDescription.entity(forEntityName: "Category", in: coreDataStack.managedContext)!
-        let priceEntity = NSEntityDescription.entity(forEntityName: "Price", in: coreDataStack.managedContext)!
+        let priceEntity = NSEntityDescription.entity(forEntityName: "PriceInfo", in: coreDataStack.managedContext)!
         let statsEntity = NSEntityDescription.entity(forEntityName: "Stats", in: coreDataStack.managedContext)!
         
         let jsonDict = try! JSONSerialization.jsonObject(with: jsonData, options: JSONSerialization.ReadingOptions.allowFragments) as! [String: AnyObject]

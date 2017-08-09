@@ -25,6 +25,7 @@
 		B738BD4E1F3AE37700C44497 /* Venue+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = B738BD441F3AE37700C44497 /* Venue+CoreDataClass.swift */; };
 		B738BD4F1F3AE37700C44497 /* Venue+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = B738BD451F3AE37700C44497 /* Venue+CoreDataProperties.swift */; };
 		B7A9A4371F3AE491009FDF60 /* seed.json in Resources */ = {isa = PBXBuildFile; fileRef = B7A9A4361F3AE491009FDF60 /* seed.json */; };
+		B7A9A4391F3AF3DF009FDF60 /* FilterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7A9A4381F3AF3DF009FDF60 /* FilterViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -48,6 +49,7 @@
 		B738BD441F3AE37700C44497 /* Venue+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Venue+CoreDataClass.swift"; sourceTree = "<group>"; };
 		B738BD451F3AE37700C44497 /* Venue+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Venue+CoreDataProperties.swift"; sourceTree = "<group>"; };
 		B7A9A4361F3AE491009FDF60 /* seed.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = seed.json; sourceTree = "<group>"; };
+		B7A9A4381F3AF3DF009FDF60 /* FilterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FilterViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -84,6 +86,7 @@
 				B738BD3B1F3AE36700C44497 /* NSManagedContext */,
 				B738BD241F3AE0AF00C44497 /* AppDelegate.swift */,
 				B738BD261F3AE0AF00C44497 /* ViewController.swift */,
+				B7A9A4381F3AF3DF009FDF60 /* FilterViewController.swift */,
 				B738BD281F3AE0AF00C44497 /* Main.storyboard */,
 				B738BD2B1F3AE0AF00C44497 /* Assets.xcassets */,
 				B738BD2D1F3AE0AF00C44497 /* LaunchScreen.storyboard */,
@@ -192,6 +195,7 @@
 				B738BD481F3AE37700C44497 /* Category+CoreDataClass.swift in Sources */,
 				B738BD471F3AE37700C44497 /* Location+CoreDataProperties.swift in Sources */,
 				B738BD4E1F3AE37700C44497 /* Venue+CoreDataClass.swift in Sources */,
+				B7A9A4391F3AF3DF009FDF60 /* FilterViewController.swift in Sources */,
 				B738BD271F3AE0AF00C44497 /* ViewController.swift in Sources */,
 				B738BD461F3AE37700C44497 /* Location+CoreDataClass.swift in Sources */,
 				B738BD4B1F3AE37700C44497 /* PriceInfo+CoreDataProperties.swift in Sources */,
